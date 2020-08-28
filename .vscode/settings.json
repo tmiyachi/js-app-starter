@@ -1,0 +1,34 @@
+{
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
+  },
+  "[css]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
+  },
+  "[scss]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
+  },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "vetur.format.enable": false
+}
