@@ -3,17 +3,10 @@
   "eslint.enable": true,
   "stylelint.enable": true,
   "eslint.alwaysShowStatus": true,
-  // validationはESlintで行う
-  // formatはprettier-eslintで保存時にフォーマットする
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    }
+    "editor.formatOnSave": false
   },
-  // validationはstylelintで行う
-  // formatはprettier-stylelintで保存時にフォーマットする
   "css.validate": false,
   "scss.validate": false,
   "less.validate": false,
@@ -47,5 +40,9 @@
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": false
   }
 }
