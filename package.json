@@ -37,7 +37,7 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "build:dev": "webpack --config webpack.prod.js --watch",
-    "start": "webpack-dev-server --open --config webpack.dev.js"
+    "start": "webpack serve --open --config webpack.dev.js"
   },
   "private": true,
   "keywords": [],
