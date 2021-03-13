@@ -1,11 +1,13 @@
 {
   "prettier.enable": true,
-  "eslint.enable": true,
   "stylelint.enable": true,
   "eslint.alwaysShowStatus": true,
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "css.validate": false,
   "scss.validate": false,
@@ -42,7 +44,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
+    // lintが終了しない場合があるのでデフォルトの保存時アクションはoffにして必要な言語でのみ設定
+    "source.fixAll.eslint": false,
     "source.fixAll.stylelint": false
   }
 }
