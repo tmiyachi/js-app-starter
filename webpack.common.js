@@ -58,6 +58,7 @@ module.exports = {
     }),
     // webpackで生成したjsとcssを読み込んだhtmlを作成
     new HtmlWebpackPlugin({
+      title: 'Application Name',
       template: path.resolve(__dirname, 'src/index.html'),
     }),
   ],
