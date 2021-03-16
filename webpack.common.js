@@ -9,6 +9,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
+    assetModuleFilename: 'images/[name][ext]',
+    publicPath: '',
   },
   resolve: {
     alias: {
@@ -41,11 +43,7 @@ module.exports = {
       },
       {
         test: /\.(gif|png|jpg|eot|wof|woff|ttf|svg)$/,
-        // 画像を埋め込まず任意のフォルダに保存する
-        loader: 'file-loader',
-        options: {
-          name: './images/[name].[ext]',
-        },
+        type: 'asset/resource',
       },
     ],
   },
@@ -62,4 +60,5 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
     }),
   ],
+  // target: ['web', 'es5'], // for ES5
 };
