@@ -34,7 +34,7 @@
     "build": "webpack --config webpack.prod.js",
     "build:dev": "webpack --config webpack.dev.js --watch",
     "start": "webpack serve --open --config webpack.dev.js",
-    "lint:js": "npx eslint src/**/*.js",
+    "lint:js": "eslint src/**/*.js",
     "lint:css": "stylelint src/**/*.{css,scss}",
     "lint": "npm-run-all --parallel lint:*"
   },
