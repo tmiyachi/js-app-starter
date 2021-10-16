@@ -49,11 +49,16 @@ module.exports = {
     ],
   },
   plugins: [
-    // 生成先のフォルダを空にする
-    new CleanWebpackPlugin(),
-    // cssファイルをjsファイルにバンドルせず処理するプラグイン
+    new CleanWebpackPlugin({
+      // 削除したくないファイルは!で除外
+      // cleanOnceBeforeBuildPatterns: [
+      //   '**/*',
+      //   '!static-files*',
+      //   '!directoryToExclude/**',
+      // ],
+    }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name].bundle.css',
     }),
     // webpackで生成したjsとcssを読み込んだhtmlを作成
     new HtmlWebpackPlugin({
