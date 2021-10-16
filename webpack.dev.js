@@ -6,8 +6,19 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: 'dist',
-    watchContentBase: true,
+    port: 8080,
     open: true,
+    // historyApiFallback: true,
+    // static: [
+    //   {
+    //     directory: path.resolve(__dirname, 'src/static/'),
+    //   },
+    // ],
+    // proxy: [
+    //   {
+    //   context: [],
+    //   target: "",
+    //   }
+    // ],
   },
 });
