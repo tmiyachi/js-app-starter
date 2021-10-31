@@ -1,7 +1,7 @@
 {
   "name": "js-app-starter",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Starter kit for JavaScript web application",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
