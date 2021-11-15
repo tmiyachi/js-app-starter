@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     'stylelint-config-recommended-scss',
     'stylelint-config-recess-order',
-    'stylelint-prettier/recommended',
+    'stylelint-config-prettier',
   ],
   overrides: [
     {
@@ -10,5 +10,5 @@ module.exports = {
       customSyntax: 'postcss-scss',
     },
   ],
-  rules: {}
+  rules: {},
 };
