@@ -3,5 +3,13 @@
   "htmlWhitespaceSensitivity": "ignore",
   "singleQuote": true,
   "vueIndentScriptAndStyle": true,
-  "printWidth": 80
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": ["**/*.html"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
 }
