@@ -5,6 +5,8 @@ module.exports = {
     'stylelint-config-prettier',
   ],
   overrides: [
+    // additional configuration to validate scss with vscode-stylelint extension
+    // https://github.com/stylelint/vscode-stylelint#%EF%B8%8F-only-css-and-postcss-are-validated-by-default
     {
       files: ['**/*.scss'],
       customSyntax: 'postcss-scss',
