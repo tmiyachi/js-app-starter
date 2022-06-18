@@ -9,5 +9,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'consistent-return': 'error',
+  },
 };
