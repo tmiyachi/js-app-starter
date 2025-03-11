@@ -7,6 +7,8 @@ import eslintConfigPrettier from 'eslint-config-prettier/flat';
  * @see https://eslint.org/docs/latest/use/configure/
  */
 export default defineConfig([
+  js.configs.recommended,
+  eslintConfigPrettier,
   {
     ignores: ['dist/**/*'],
     languageOptions: {
@@ -30,6 +32,4 @@ export default defineConfig([
       ],
     },
   },
-  js.configs.recommended,
-  eslintConfigPrettier,
 ]);
